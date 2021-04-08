@@ -1,4 +1,6 @@
-// console.log('Hello from JS');
+// const chalk = require('chalk');
+// const log = console.log;
+
 
 let firstName = 'Igor';
 let lastName = '   Maslakov   ';
@@ -20,12 +22,13 @@ data.push('maslakoff');
 data.push(lastName);
 
 
-console.log('data:', data)
+// log(chalk.blue('data:'), data)
 
 const result = data
 .filter(elememt => typeof elememt === 'string')
 .map(item => item.trim())
 .join(' ');
+console.log('Parcel is awesome!')
 
 // const filteredData = data
 // .filter(elememt => typeof elememt === 'string');
@@ -34,7 +37,7 @@ const result = data
 
 // const finalResult = trimmedData.join(' ');
 
-console.log('string data:', result)
+// console.log(chalk.red('string data:'), result)
 // indexOf
 // includes (es6)
 // replace
